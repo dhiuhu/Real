@@ -12,9 +12,7 @@ jobs:
       - name: Add artifacts to publish
         run: |
           cd downloads
-          echo 'alpha' > alpha.html
-          echo 'bravo' > bravo.html
-          echo 'charlie' > charlie.html
+          echo "alpha" > alpha.html
           cd..
 
       - name: Upload action
