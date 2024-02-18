@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --outputFile=./.github/workflows/test-results.xml"
   },
+  "jest": {
+    "reporters": ["default", ["jest-junit", { "outputDirectory": "./.github/workflows", "outputName": "test-results.xml" }]]
+  }
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -13,3 +16,6 @@
     "jest": "^29.7.0"
   }
 }
+
+
+
