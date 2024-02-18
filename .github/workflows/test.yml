@@ -18,8 +18,12 @@ jobs:
       - name: Run Jest tests
         run: npm test
 
+      - name: List contents of the directory
+        run: ls -R ./coverage
+
       - name: Archive test results
         uses: actions/upload-artifact@v2
         with:
           name: jest-test-results
-          path: ./dist
+          path: ./coverage
+
