@@ -13,7 +13,7 @@ jobs:
         run: |
           cd downloads
           echo "alpha" > alpha.html
-          cd..
+          cd ..
 
       - name: Upload action
         uses: actions/upload-artifact@v4
