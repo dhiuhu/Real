@@ -13,4 +13,4 @@ jobs:
         run: |
           npm install
       - name: Run Jest tests
-        run: sudo npm test
+        run: npm test
