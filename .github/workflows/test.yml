@@ -13,8 +13,3 @@ jobs:
           npm install
       - name: Run Jest tests
         run: npm test
-      - name: Upload static site content
-        uses: actions/upload-checkout@v2
-        with: 
-          name: static-site
-          path: .github/workflows/
