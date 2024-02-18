@@ -12,5 +12,5 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
-      - name: Run sudo Jest tests
+      - name: Run Jest tests
         run: npm test
