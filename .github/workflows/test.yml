@@ -15,15 +15,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Jest tests
-        run: npm test
-
-      - name: List contents of the directory
-        run: ls -R ./coverage
+      - name: Run Jest tests with coverage
+        run: npm test -- --coverage
 
       - name: Archive test results
         uses: actions/upload-artifact@v2
         with:
           name: jest-test-results
           path: ./coverage
-
