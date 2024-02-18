@@ -8,7 +8,7 @@
   },
   "jest": {
     "reporters": ["default", ["jest-junit", { "outputDirectory": "./.github/workflows", "outputName": "test-results.xml" }]]
-  }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
