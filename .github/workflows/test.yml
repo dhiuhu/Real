@@ -13,7 +13,10 @@ jobs:
           npm install
       - name: Run Jest tests
         run: npm test
-
+jobs:
+  archive-build-artifacts:
+    runs-on: ubuntu-latest
+    steps:
       - name: Archive test results
         uses: actions/upload-artifact@v2
         with:
